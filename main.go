@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	workingDay := 4
+	workingDay := 1
 
 	fmt.Printf("Day %d\n", workingDay)
 	switch workingDay {
@@ -34,8 +34,10 @@ func main() {
 }
 
 func runsDay01() {
-	samplePath := "./days/day01/inputs/example01.txt"
-	p := "./days/day01/inputs/in01.txt"
+	day := "day01"
+	rootPath := fmt.Sprintf("./days/%s/inputs/", day)
+	samplePath := fmt.Sprintf("%s%s", rootPath, "example01.txt")
+	p := fmt.Sprintf("%s%s", rootPath, "in01.txt")
 	fmt.Println(samplePath)
 	fmt.Println(p)
 	input := utils.ReadLines(p)
@@ -44,8 +46,10 @@ func runsDay01() {
 }
 
 func runsDay02() {
-	samplePath := "./days/day03/inputs/example01.txt"
-	p := "./days/day03/inputs/in01.txt"
+	day := "day02"
+	rootPath := fmt.Sprintf("./days/%s/inputs/", day)
+	samplePath := fmt.Sprintf("%s%s", rootPath, "example01.txt")
+	p := fmt.Sprintf("%s%s", rootPath, "in01.txt")
 	fmt.Println(samplePath)
 	fmt.Println(p)
 	input := utils.ReadLines(samplePath)
@@ -54,9 +58,10 @@ func runsDay02() {
 }
 
 func runsDay03() {
-	samplePath := "./days/day03/inputs/example01.txt"
-	samplePath = "./days/day03/inputs/example02.txt"
-	p := "./days/day03/inputs/in02.txt"
+	day := "day03"
+	rootPath := fmt.Sprintf("./days/%s/inputs/", day)
+	samplePath := fmt.Sprintf("%s%s", rootPath, "example01.txt")
+	p := fmt.Sprintf("%s%s", rootPath, "in01.txt")
 	fmt.Println(samplePath)
 	fmt.Println(p)
 	input := utils.ReadLines(p)
@@ -65,8 +70,10 @@ func runsDay03() {
 }
 
 func runsDay04() {
-	samplePath := "./days/day04/inputs/example01.txt"
-	p := "./days/day04/inputs/in01.txt"
+	day := "day04"
+	rootPath := fmt.Sprintf("./days/%s/inputs/", day)
+	samplePath := fmt.Sprintf("%s%s", rootPath, "example01.txt")
+	p := fmt.Sprintf("%s%s", rootPath, "in01.txt")
 	fmt.Println(samplePath)
 	fmt.Println(p)
 
@@ -77,8 +84,10 @@ func runsDay04() {
 }
 
 func runsDay05() {
-	samplePath := "./days/day05/inputs/example01.txt"
-	p := "./days/day05/inputs/in01.txt"
+	day := "day05"
+	rootPath := fmt.Sprintf("./days/%s/inputs/", day)
+	samplePath := fmt.Sprintf("%s%s", rootPath, "example01.txt")
+	p := fmt.Sprintf("%s%s", rootPath, "in01.txt")
 	fmt.Println(samplePath)
 	fmt.Println(p)
 
