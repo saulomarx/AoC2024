@@ -7,6 +7,7 @@ import (
 	"github.com/saulomarx/AoC2024/days/day02"
 	"github.com/saulomarx/AoC2024/days/day03"
 	"github.com/saulomarx/AoC2024/days/day04"
+	"github.com/saulomarx/AoC2024/days/day05"
 
 	"github.com/saulomarx/AoC2024/utils"
 )
@@ -24,6 +25,8 @@ func main() {
 		runsDay03()
 	case 4:
 		runsDay04()
+	case 5:
+		runsDay05()
 	default:
 		fmt.Println("not today")
 	}
@@ -31,8 +34,8 @@ func main() {
 }
 
 func runsDay01() {
-	samplePath := "./days/day01/imputs/example01.txt"
-	p := "./days/day01/imputs/in01.txt"
+	samplePath := "./days/day01/inputs/example01.txt"
+	p := "./days/day01/inputs/in01.txt"
 	fmt.Println(samplePath)
 	fmt.Println(p)
 	input := utils.ReadLines(p)
@@ -41,8 +44,8 @@ func runsDay01() {
 }
 
 func runsDay02() {
-	samplePath := "./days/day03/imputs/example01.txt"
-	p := "./days/day03/imputs/in01.txt"
+	samplePath := "./days/day03/inputs/example01.txt"
+	p := "./days/day03/inputs/in01.txt"
 	fmt.Println(samplePath)
 	fmt.Println(p)
 	input := utils.ReadLines(samplePath)
@@ -51,9 +54,9 @@ func runsDay02() {
 }
 
 func runsDay03() {
-	samplePath := "./days/day03/imputs/example01.txt"
-	samplePath = "./days/day03/imputs/example02.txt"
-	p := "./days/day03/imputs/in02.txt"
+	samplePath := "./days/day03/inputs/example01.txt"
+	samplePath = "./days/day03/inputs/example02.txt"
+	p := "./days/day03/inputs/in02.txt"
 	fmt.Println(samplePath)
 	fmt.Println(p)
 	input := utils.ReadLines(p)
@@ -62,8 +65,8 @@ func runsDay03() {
 }
 
 func runsDay04() {
-	samplePath := "./days/day04/imputs/example01.txt"
-	p := "./days/day04/imputs/in01.txt"
+	samplePath := "./days/day04/inputs/example01.txt"
+	p := "./days/day04/inputs/in01.txt"
 	fmt.Println(samplePath)
 	fmt.Println(p)
 
@@ -71,4 +74,16 @@ func runsDay04() {
 	mtx := utils.ReadStrMatrix(input)
 	day04.Part01(mtx)
 	day04.Part02(mtx)
+}
+
+func runsDay05() {
+	samplePath := "./days/day05/inputs/example01.txt"
+	p := "./days/day05/inputs/in01.txt"
+	fmt.Println(samplePath)
+	fmt.Println(p)
+
+	input := utils.ReadLines(p)
+	mtx := utils.ReadStrMatrix(input)
+	day05.Part01(mtx)
+	day05.Part02(mtx)
 }
