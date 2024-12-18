@@ -62,6 +62,19 @@ func ReadIntMatrix(in []string) [][]int {
 	return mtx
 }
 
+func ReadStrMatrix(in []string) [][]string {
+	mtx := make([][]string, len(in))
+	for i, l := range in {
+		newLine := make([]string, len(l))
+		for j, c := range l {
+			value := string(c)
+			newLine[j] = value
+		}
+		mtx[i] = newLine
+	}
+	return mtx
+}
+
 func PrintIntMtx(in [][]int) {
 	for i := range in {
 		for j := range in[i] {
